@@ -1,0 +1,184 @@
+
+.header {
+    width: 100%;
+    height: auto;
+    background-color:rgba(126, 96, 201, 0.331);
+
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between;
+    
+    */
+    position: relative;
+}
+
+ .logo{
+      font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+     padding: 30px;
+    font-size: 35px; 
+    color:orangered;
+    display: flex;
+    
+}
+.icon{
+    line-height: 90px;
+    color: yellow;
+    
+}
+.header .left_side {
+    width: 60%;
+    height: auto;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    padding-right: 40px;
+    
+}
+
+.header .left_side .search {
+    width: 60%;
+    position: relative;
+    height: 100%;
+    display: flex;
+    align-items: center;
+
+
+}
+
+.header .left_side .search .search_bar {
+    width: 100%;
+    height: 40px;
+    outline: none;
+    background-color: rgba(255, 255, 255, 0.041);
+    border: none;
+    padding-left: 15px;
+    color: var(--text-white);
+    border-radius: 3px;
+    transition: 0.5s ease-in;
+    border: 1px solid rgba(255, 255, 255, 0.041);
+    font-size: 17px;
+
+}
+
+.header .left_side .search .search_icon {
+    position: absolute;
+    right: 27px;
+    top: 10px;
+    font-size: 22px;
+    color: var(--text-light);
+}
+
+
+ .header .left_side .search .search_bar:focus{
+    border: 1px solid black;
+ }
+
+  .left_menus{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 80px;
+ }
+
+   .left_menus .cart{
+    font-size: 30px;
+    padding-left: 70px;
+    
+ } 
+
+ .left_menus .profile{
+    display: flex;
+    align-items: center;
+     position: relative; 
+     column-gap: 10px;
+ }
+
+ .left_menus .profile .image {
+    width: 40px;
+    height: 40px;
+}
+.profile .image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.details{
+    display: flex;
+}
+ 
+
+
+
+
+
+
+ .profile .name{
+    color: var(--text-white);
+    font-size: 13px;
+    transition: 0.5s ease;
+}
+
+ .profile:hover .name{
+    color: orangered;
+    
+}
+ .profile .text{
+    color: var(--text-light);
+    font-weight: 500;
+    transition: 0.5s ease;
+}
+
+ .profile:hover .text{
+    color: var(--text-white);
+}
+.profile .details{
+    display: grid;
+}
+ .profile .account_box{
+    position: absolute;
+    top: 90px;
+    right: -20px;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s linear;
+    background-color: var(--bg-white);
+    border-radius: 5px;
+    width: 200px;
+    height: auto;
+    box-shadow: rgba(0, 0,0, 0.301) 2px 5px 10px 0px;
+    padding: 10px;
+
+}
+ .profile:hover .account_box{
+    opacity: 9;
+    visibility: visible;
+    top: 70px;
+
+}
+  .account_box .list{
+    color: var(--text-dark-light);
+    font-size: 16px;
+    padding: 5px 5px;
+    transition: 0.5s ease;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-family: 'Roboto',sans-serif;
+}
+
+ .profile .account_box .list:hover{
+    
+    color:orangered;
+}
+ .profile .account_box .orange{
+    color: orangered;
+    font-weight: 600;
+    font-size: 17px;
+}
+ .profile .account_box .hr{
+    width: 100%;
+    height: 1px;
+    background-color: orangered;
+    margin: 5px 0px;
+}
